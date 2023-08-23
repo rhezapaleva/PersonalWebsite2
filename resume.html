@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fake Resume</h1>
+    <h2>John Doe</h2>
+    <p>Web Developer</p>
+    <p>Email: johndoe@example.com</p>
+    <p>Phone: 123-456-7890</p>
+    
+    <h2>Summary</h2>
+    <p>Experienced web developer with a passion for creating user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript, and various web development frameworks.</p>
+    
+    <h2>Experience</h2>
+    <p><strong>Web Developer</strong><br>ABC Web Services<br>June 2018 - Present</p>
+    <p>Developed and maintained client websites, ensuring responsiveness and cross-browser compatibility. Collaborated with design and content teams to deliver high-quality websites that meet client requirements.</p>
+    
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science in Computer Science</strong><br>XYZ University<br>Graduated May 2017</p>
+    
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Version Control (Git)</li>
+    </ul>
+    
+    <button class="btn" id="printBtn">Print Resume</button>
+  </div>
+  
+  <script>
+    const printButton = document.getElementById('printBtn');
+    printButton.addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</body>
+</html>
